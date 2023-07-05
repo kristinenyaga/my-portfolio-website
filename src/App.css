@@ -1,42 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+/* 
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image:
+   radial-gradient(
+      at 27% 87%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ), 
+    radial-gradient(at 97% 21%, rgb(11, 44, 90) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgb(32, 19, 61) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(31, 20, 61) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgb(33, 37, 83) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgb(23, 36, 65) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgb(27, 33, 74) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}  */
+
+.app {
+  @apply relative  z-10 flex justify-center items-center flex-col mx-auto  sm:px-16 px-6  text-white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.text{
+  @apply text-7xl
 }
